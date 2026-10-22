@@ -25,7 +25,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/gitcolombo@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/gitcolombo@sha256:e53c8efb56116b6b58d4ba3bd9ea874e50d8af3723978464b4abfd9ada95532b
   platforms: [linux/amd64, linux/arm64]
   command: ["gitcolombo", "--no-color", "--repos-dir", "/tmp/repos", "-u", "{url}"]
   output_format: text
